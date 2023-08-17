@@ -38,6 +38,10 @@ const questions = [
 
 const currentQuestion = ref(0)
 
+const handleAnswerButtonClick = () => {
+    alert('du klickade!')
+}
+
 </script>
 
 <template>
@@ -49,7 +53,7 @@ const currentQuestion = ref(0)
         <div class="question-text">{{ questions[0].questionText }}</div>
         </p>
         <div class="answer-section">
-            <button v-for="opt in questions[0].answerOptions">{{ opt.answerText }}</button>
+            <button @click="handleAnswerButtonClick" v-for="opt in questions[0].answerOptions">{{ opt.answerText }}</button>
         </div>
     </main>
 </template>
