@@ -39,7 +39,7 @@ const questions = [
 const currentQuestion = ref(0)
 
 const handleAnswerButtonClick = () => {
-    alert('du klickade!')
+    currentQuestion.value++
 }
 
 </script>
@@ -50,10 +50,10 @@ const handleAnswerButtonClick = () => {
         <p class="score-section">du har x poäng av {{ questions.length }} poäng</p>
         <p class="question-section">
         <div class="question-count">fråga {{ currentQuestion + 1 }} av {{ questions.length }}</div>
-        <div class="question-text">{{ questions[0].questionText }}</div>
+        <div class="question-text">{{ questions[currentQuestion].questionText }}</div>
         </p>
         <div class="answer-section">
-            <button @click="handleAnswerButtonClick" v-for="opt in questions[0].answerOptions">{{ opt.answerText }}</button>
+            <button @click="handleAnswerButtonClick" v-for="opt in questions[currentQuestion].answerOptions">{{ opt.answerText }}</button>
         </div>
     </main>
 </template>
