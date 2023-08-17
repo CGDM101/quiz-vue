@@ -1,4 +1,5 @@
 <script setup>
+import { ref } from 'vue'
 
 const questions = [
     {
@@ -35,18 +36,20 @@ const questions = [
     },
 ]
 
+const currentQuestion = ref(0)
+
 </script>
 
 <template>
     <header>Depeche Mode Lyrics Quiz</header>
     <main>
-        <p class="score-section">du har x poäng av x poäng</p>
-        <p class="question-section">Frågan</p>
+        <p class="score-section">du har x poäng av {{ questions.length }} poäng</p>
+        <p class="question-section">
+        <div class="question-count">fråga {{ currentQuestion + 1 }} av {{ questions.length }}</div>
+        <div class="question-text">{{ questions[0].questionText }}</div>
+        </p>
         <div class="answer-section">
-            <button>opt1</button>
-            <button>opt2</button>
-            <button>opt2</button>
-            <button>opt3</button>
+            <button v-for="opt in questions[0].answerOptions">{{ opt.answerText }}</button>
         </div>
     </main>
 </template>
