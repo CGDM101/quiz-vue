@@ -11,3 +11,17 @@
 .answer-section button {
     margin: 0.5em;
 }
+
+header {
+    color: hotpink;
+    margin: 0.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: fantasy;
+    font-size: xx-large;
+    letter-spacing: 0.25em;
+    text-shadow: 2px 2px 2px red;
+    background-color: cornsilk;
+    padding: 1em;
+    border: 1px solid;
+}
