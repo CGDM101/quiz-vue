@@ -37,25 +37,33 @@ const questions = [
 ]
 
 const currentQuestion = ref(0)
+const score = ref(0)
 
 const handleAnswerButtonClick = () => {
     currentQuestion.value++
+    score.value++
+    console.log('curr q: '+currentQuestion.value)
+    console.log('score: '+score.value)
+    alert('du har: '+score.value) // Dock skrivs det inte ut i frontenden... Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'questionText')
 }
 
 </script>
 
 <template>
-    <header>Depeche Mode Lyrics Quiz</header>
-    <main>
-        <p class="score-section">du har x poäng av {{ questions.length }} poäng</p>
-        <p class="question-section">
-        <div class="question-count">fråga {{ currentQuestion + 1 }} av {{ questions.length }}</div>
-        <div class="question-text">{{ questions[currentQuestion].questionText }}</div>
-        </p>
-        <div class="answer-section">
-            <button @click="handleAnswerButtonClick" v-for="opt in questions[currentQuestion].answerOptions">{{ opt.answerText }}</button>
-        </div>
-    </main>
+    <div class="app">
+        <header>Depeche Mode Lyrics Quiz</header>
+        <main>
+            <p class="score-section">du har {{ score }} poäng av {{ questions.length }} poäng</p>
+            <p class="question-section">
+            <div class="question-count">fråga {{ currentQuestion + 1 }} av {{ questions.length }}</div>
+            <div class="question-text">{{ questions[currentQuestion].questionText }}</div>
+            </p>
+            <div class="answer-section">
+                <button @click="handleAnswerButtonClick" v-for="opt in questions[currentQuestion].answerOptions">{{
+                    opt.answerText }}</button>
+            </div>
+        </main>
+    </div>
 </template>
 
 <style scoped></style>
