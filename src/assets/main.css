@@ -45,3 +45,12 @@ button:hover {
     background-color: antiquewhite;
     box-shadow: 5px 5px 5px red;
 }
+
+.question-text {
+    font-style: italic;
+    letter-spacing: 0.05em;
+    word-spacing: 0.25em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: darkslategrey;
+}

@@ -54,10 +54,10 @@ const handleAnswerButtonClick = () => {
         <header>Depeche Mode Lyrics Quiz</header>
         <main>
             <p class="score-section">du har {{ score }} poäng av {{ questions.length }} poäng</p>
-            <p class="question-section">
-            <div class="question-count">fråga {{ currentQuestion + 1 }} av {{ questions.length }}</div>
-            <div class="question-text">{{ questions[currentQuestion].questionText }}</div>
-            </p>
+            <div class="question-section">
+                <p class="question-count"> {{ currentQuestion + 1 }} / {{ questions.length }}:</p>
+                <p class="question-text">{{ questions[currentQuestion].questionText }}</p>
+            </div>
             <div class="answer-section">
                 <button @click="handleAnswerButtonClick" v-for="opt in questions[currentQuestion].answerOptions">{{
                     opt.answerText }}</button>
