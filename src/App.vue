@@ -63,6 +63,9 @@ const handleAnswerButtonClick = () => {
                     opt.answerText }}</button>
             </div>
         </main>
+
+        <img src='./assets/vio2.png' alt="violator-rose" />
+
     </div>
 </template>
 

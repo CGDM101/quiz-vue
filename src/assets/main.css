@@ -27,6 +27,10 @@ header {
     border: 1px solid;
 }
 
+/* header:hover {
+    box-shadow: 5px 5px 5px hotpink;
+} */
+
 button {
     /* border: none; */
     border-style: hidden;
@@ -53,4 +57,75 @@ button:hover {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: x-large;
     color: darkslategrey;
+}
+
+img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+
+    /* background-color: transparent; */
+    animation-name: violator;
+    animation-duration: 5s;
+    animation-delay: 1.5s;
+
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* 'ease' är default */
+}
+
+@keyframes violator {
+    /* Example with 'to' and 'from': */
+    /* from {
+        background-color: red;
+    }
+
+    to {
+        background-color: greenyellow;
+    } */
+
+    /* Example with percentages: */
+    /* 0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    75% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: red;
+    } */
+
+    /* Example with >1 property affected: */
+    /* from {
+        background-color: lightskyblue;
+        opacity: 100%;
+    }
+
+    to {
+        background-color: yellow;
+        opacity: 20%;
+    } */
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    /* Kan också skriva bara rotate: 0deg*/
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+img:hover {
+    opacity: 50%;
 }
