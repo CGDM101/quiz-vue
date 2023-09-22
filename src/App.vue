@@ -1,5 +1,7 @@
 <script setup>
 import { ref } from 'vue'
+import JSConfetti from 'js-confetti'
+const jsConfetti = new JSConfetti()
 
 const questions = [
     {
@@ -50,6 +52,7 @@ const handleAnswerButtonClick = (opt) => {
             score.value++
         } else if (opt == false) { }
         console.log('end of quiz, total socre: ', score.value);
+        jsConfetti.addConfetti()
     }
 }
 </script>
