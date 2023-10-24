@@ -52,7 +52,11 @@ const handleAnswerButtonClick = (opt) => {
             score.value++
         } else if (opt == false) { }
         console.log('end of quiz, total socre: ', score.value);
-        jsConfetti.addConfetti()
+        jsConfetti.addConfetti({
+            emojis: ['💜', '🖤'],
+            emojiSize: 30,
+        }
+        )
     }
 }
 </script>
