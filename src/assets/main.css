@@ -38,7 +38,7 @@ header {
 button {
     /* border: none; */
     border-style: hidden;
-    box-shadow: 15px 5px 5px red;
+    box-shadow: 5px 5px 5px red;
     padding: 1em;
     border-radius: 0.8em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -51,7 +51,8 @@ button {
 
 button:hover {
     background-color: antiquewhite;
-    box-shadow: 5px 5px 5px red;
+    box-shadow: 7px 7px 7px red;
+    /* opacity: 50% */
 }
 
 .question-text {
