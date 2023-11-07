@@ -40,6 +40,7 @@ const questions = [
 
 const currentQuestion = ref(0)
 const score = ref(0)
+const showScore = ref(false)
 
 const handleAnswerButtonClick = (opt) => {
     if (currentQuestion.value < questions.length - 1) {
@@ -52,6 +53,7 @@ const handleAnswerButtonClick = (opt) => {
             score.value++
         } else if (opt == false) { }
         console.log('end of quiz, total socre: ', score.value);
+        showScore.value = ref(true)
         jsConfetti.addConfetti({
             emojis: ['💜', '🖤'],
             emojiSize: 30,
@@ -65,19 +67,23 @@ const handleAnswerButtonClick = (opt) => {
     <div class="app">
         <header>Depeche Mode Lyrics Quiz</header>
         <main>
-            <p class="score-section">du har {{ score }} poäng av {{ questions.length }} poäng</p>
-            <div class="question-section">
-                <p class="question-count"> {{ currentQuestion + 1 }} / {{ questions.length }}:</p>
-                <p class="question-text">{{ questions[currentQuestion].questionText }}</p>
+            <p v-if="showScore" class="score-section">Du fick {{ score }} poäng av {{ questions.length }} totalt poäng</p>
+            <div v-else>
+                <div class="question-section">
+                    <p class="question-count"> {{ currentQuestion + 1 }} / {{ questions.length }}:</p>
+                    <p class="question-text">{{ questions[currentQuestion].questionText }}</p>
+                </div>
+                <div class="answer-section">
+                    <button @click="handleAnswerButtonClick(opt.isCorrect)"
+                        v-for="opt in questions[currentQuestion].answerOptions">{{
+                            opt.answerText }}</button>
+                </div>
+
+                <img src='./assets/vio2.png' alt="violator-rose" />
             </div>
-            <div class="answer-section">
-                <button @click="handleAnswerButtonClick(opt.isCorrect)"
-                    v-for="opt in questions[currentQuestion].answerOptions">{{
-                        opt.answerText }}</button>
-            </div>
+
         </main>
 
-        <img src='./assets/vio2.png' alt="violator-rose" />
 
     </div>
 </template>

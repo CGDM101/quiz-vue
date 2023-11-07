@@ -1,3 +1,7 @@
+body {
+    background-color: ghostwhite;
+}
+
 .app {
     text-align: center;
 }
@@ -57,6 +61,17 @@ button:hover {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: x-large;
     color: darkslategrey;
+}
+
+.score-section {
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    word-spacing: 0.25em;
+    font-family: fantasy;
+    font-size: x-large;
+    color: darkslateblue;
+    text-shadow: 2px 2px 2px lightslategray;
+    padding-top: 3em;
 }
 
 img {
