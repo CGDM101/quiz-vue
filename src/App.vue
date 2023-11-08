@@ -43,6 +43,10 @@ const score = ref(0)
 const showScore = ref(false)
 
 const handleAnswerButtonClick = (opt) => {
+    // fetch("https://dm-quotes.onrender.com/")
+    // .then(res => res.json())
+    // .then(data => console.log(data))
+
     if (currentQuestion.value < questions.length - 1) {
         currentQuestion.value++
         if (opt == true) {
