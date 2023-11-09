@@ -36,6 +36,86 @@ const questions = [
             { answerText: "Little 15", isCorrect: false },
         ],
     },
+    {
+        questionText: "I used the wrong method with the wrong technique",
+        answerOptions: [
+            { answerText: "Useless", isCorrect: false },
+            { answerText: "It's No Good", isCorrect: false },
+            { answerText: "Wrong", isCorrect: true },
+        ],
+    },
+    {
+        questionText: "Your favourite slave",
+        answerOptions: [
+            { answerText: "In Your Room", isCorrect: true },
+            { answerText: "Master and Servant", isCorrect: false },
+            { answerText: "Puppets", isCorrect: false },
+        ],
+    },
+    {
+        questionText: "Death is everywhere",
+        answerOptions: [
+            { answerText: "Ghosts Again", isCorrect: false },
+            { answerText: "Fly on the Windscreen", isCorrect: true },
+            { answerText: "Barrel of a Gun", isCorrect: false },
+        ],
+    },
+    {
+        questionText: "It used to be so civilised",
+        answerOptions: [
+            { answerText: "People are People", isCorrect: false },
+            { answerText: "Policy of Truth", isCorrect: true },
+            { answerText: "People Are Good", isCorrect: false },
+        ],
+    },
+    {
+        questionText: "Words are meaningless",
+        answerOptions: [
+            { answerText: "Shout", isCorrect: false },
+            { answerText: "Lie To Me", isCorrect: false },
+            { answerText: "Enjoy the Silence", isCorrect: true },
+        ],
+    },
+    {
+        questionText: "I stand still stepping on a shady street",
+        answerOptions: [
+            { answerText: "New Life", isCorrect: true },
+            { answerText: "Photographic", isCorrect: false },
+            { answerText: "Just Can't Get Enough", isCorrect: false },
+        ],
+    },
+    {
+        questionText: "Sitting waiting, anticipating nothing",
+        answerOptions: [
+            { answerText: "Black Celebration", isCorrect: false },
+            { answerText: "Sacred", isCorrect: false },
+            { answerText: "Nothing", isCorrect: true },
+        ],
+    },
+    {
+        questionText: "Faith is sleeping",
+        answerOptions: [
+            { answerText: "Ghosts Again", isCorrect: true },
+            { answerText: "Blasphemous Rumours", isCorrect: false },
+            { answerText: "Mercy In You", isCorrect: false },
+        ],
+    },
+    {
+        questionText: "Things get damaged",
+        answerOptions: [
+            { answerText: "Useless", isCorrect: false },
+            { answerText: "Precious", isCorrect: true },
+            { answerText: "Broken", isCorrect: false },
+        ],
+    },
+    {
+        questionText: "I look to you, and your strong belief",
+        answerOptions: [
+            { answerText: "Stripped", isCorrect: false },
+            { answerText: "Black Celebration", isCorrect: true },
+            { answerText: "Personal Jesus", isCorrect: false },
+        ],
+    },
 ]
 
 const currentQuestion = ref(0)
@@ -43,10 +123,6 @@ const score = ref(0)
 const showScore = ref(false)
 
 const handleAnswerButtonClick = (opt) => {
-    // fetch("https://dm-quotes.onrender.com/")
-    // .then(res => res.json())
-    // .then(data => console.log(data))
-
     if (currentQuestion.value < questions.length - 1) {
         currentQuestion.value++
         if (opt == true) {
