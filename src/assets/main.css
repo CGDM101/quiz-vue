@@ -146,7 +146,7 @@ img:hover {
     opacity: 50%;
 }
 
-/* WIP to see if media queries work for a problem with wrong font-family on small screens, not detected in Developer Tools. */
+/* These media queries are needed for a problem with wrong font-family on small screens, not detected in Developer Tools. */
 @media screen and (max-width: 480px) {
     header {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -154,5 +154,14 @@ img:hover {
 
     .question-text {
         margin-bottom: 0px;
+    }
+
+    .score-section {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;        
+    }
+
+    button:hover {
+        background-color: cornsilk;
+        box-shadow: 5px 5px 5px red;
     }
   }
