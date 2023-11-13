@@ -10,7 +10,8 @@
   "dependencies": {
     "js-confetti": "^0.11.0",
     "node": "^21.1.0",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
