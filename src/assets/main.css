@@ -160,7 +160,7 @@ img:hover {
         font-family: Verdana, Geneva, Tahoma, sans-serif;        
     }
 
-    button:hover {
+    button {
         background-color: cornsilk;
         box-shadow: 5px 5px 5px red;
     }
