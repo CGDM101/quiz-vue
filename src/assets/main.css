@@ -171,19 +171,8 @@ img:hover {
 
 
   /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) {}
-
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {}
-
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-      button:hover {
-          background-color: antiquewhite;
-          box-shadow: 7px 7px 7px red;
-          /* opacity: 50% */
-      }
-      header {
+  @media only screen and (max-width: 600px) {
+    header {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
       .question-text {
@@ -192,6 +181,30 @@ img:hover {
     .score-section {
         font-family: Verdana, Geneva, Tahoma, sans-serif;        
     }
+
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    header {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .question-text {
+        margin-bottom: 0px;
+    }
+    .score-section {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;        
+    }
+
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+      button:hover {
+          background-color: antiquewhite;
+          box-shadow: 7px 7px 7px red;
+          /* opacity: 50% */
+      }
 
   }
 
@@ -202,15 +215,6 @@ img:hover {
           box-shadow: 7px 7px 7px red;
           /* opacity: 50% */
       }
-      header {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-      }
-      .question-text {
-        margin-bottom: 0px;
-    }
-    .score-section {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;        
-    }
 
   }
 
@@ -221,14 +225,5 @@ img:hover {
           box-shadow: 7px 7px 7px red;
           /* opacity: 50% */
       }
-      header {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-      }
-      .question-text {
-        margin-bottom: 0px;
-    }
-    .score-section {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;        
-    }
 
   }
