@@ -49,11 +49,11 @@ button {
     background-color: cornsilk;
 }
 
-button:hover {
-    background-color: antiquewhite;
-    box-shadow: 7px 7px 7px red;
-    /* opacity: 50% */
-}
+/* button:hover { */
+/* background-color: antiquewhite; */
+/* box-shadow: 7px 7px 7px red; */
+/* opacity: 50% */
+/* } */
 
 .question-text {
     font-style: italic;
@@ -147,7 +147,7 @@ img:hover {
 }
 
 /* These media queries are needed for a problem with wrong font-family on small screens, not detected in Developer Tools. */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
     header {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
@@ -164,4 +164,72 @@ img:hover {
         background-color: cornsilk;
         box-shadow: 5px 5px 5px red;
     }
-  }
+  } */
+
+/* Change to mobile-first principle, to get rid of the hover-problem on touch-screens: */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .question-text {
+        margin-bottom: 0px;
+    }
+
+    .score-section {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    header {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .question-text {
+        margin-bottom: 0px;
+    }
+
+    .score-section {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    button:hover {
+        background-color: antiquewhite;
+        box-shadow: 7px 7px 7px red;
+    }
+
+    header {
+        font-family: fantasy;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    button:hover {
+        background-color: antiquewhite;
+        box-shadow: 7px 7px 7px red;
+    }
+
+    header {
+        font-family: fantasy;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    button:hover {
+        background-color: antiquewhite;
+        box-shadow: 7px 7px 7px red;
+    }
+
+    header {
+        font-family: fantasy;
+    }
+}
