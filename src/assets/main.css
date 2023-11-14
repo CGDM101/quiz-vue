@@ -205,6 +205,9 @@ img:hover {
           box-shadow: 7px 7px 7px red;
           /* opacity: 50% */
       }
+      header {
+        font-family: fantasy;
+      }
 
   }
 
@@ -215,6 +218,10 @@ img:hover {
           box-shadow: 7px 7px 7px red;
           /* opacity: 50% */
       }
+      header {
+        font-family: fantasy;
+      }
+
 
   }
 
@@ -224,6 +231,9 @@ img:hover {
           background-color: antiquewhite;
           box-shadow: 7px 7px 7px red;
           /* opacity: 50% */
+      }
+      header {
+        font-family: fantasy;
       }
 
   }
