@@ -134,7 +134,7 @@ const handleAnswerButtonClick = (opt) => {
         } else if (opt == false) { }
         console.log('end of quiz, total score: ', score.value);
         showScore.value = ref(true)
-        if (score.value > questions.length * 0.75) {
+        if (score.value > questions.length * 0.66) {
             jsConfetti.addConfetti({
                 emojis: ['💜', '🖤'],
                 emojiSize: 30,
