@@ -132,13 +132,15 @@ const handleAnswerButtonClick = (opt) => {
         if (opt == true) {
             score.value++
         } else if (opt == false) { }
-        console.log('end of quiz, total socre: ', score.value);
+        console.log('end of quiz, total score: ', score.value);
         showScore.value = ref(true)
-        jsConfetti.addConfetti({
-            emojis: ['💜', '🖤'],
-            emojiSize: 30,
+        if (score.value > questions.length * 0.75) {
+            jsConfetti.addConfetti({
+                emojis: ['💜', '🖤'],
+                emojiSize: 30,
+            }
+            )
         }
-        )
     }
 }
 </script>
