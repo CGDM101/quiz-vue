@@ -173,6 +173,8 @@ img:hover {
 @media only screen and (max-width: 600px) {
     header {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 0.75em;
+        padding: 0.75em;
     }
 
     .question-text {
@@ -181,6 +183,12 @@ img:hover {
 
     .score-section {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    img {
+        width: 90px;
+        height: 135px;
+        object-fit: cover;
     }
 }
 
@@ -188,6 +196,8 @@ img:hover {
 @media only screen and (min-width: 600px) {
     header {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 0.75em;
+        padding: 0.75em;
     }
 
     .question-text {
@@ -196,6 +206,12 @@ img:hover {
 
     .score-section {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    img {
+        width: 90px;
+        height: 135px;
+        object-fit: cover;
     }
 }
 
