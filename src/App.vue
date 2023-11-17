@@ -124,15 +124,14 @@ const showScore = ref(false)
 
 const handleAnswerButtonClick = (opt) => {
     if (currentQuestion.value < questions.length - 1) {
-        currentQuestion.value++
         if (opt == true) {
             score.value++
-        } else if (opt == false) { }
+        }
+        currentQuestion.value++
     } else {
         if (opt == true) {
             score.value++
-        } else if (opt == false) { }
-        console.log('end of quiz, total score: ', score.value);
+        }
         showScore.value = ref(true)
         if (score.value > questions.length * 0.66) {
             jsConfetti.addConfetti({
