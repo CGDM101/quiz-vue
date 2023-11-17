@@ -173,6 +173,8 @@ img:hover {
 @media only screen and (max-width: 600px) {
     header {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     .question-text {
@@ -193,6 +195,8 @@ img:hover {
 @media only screen and (min-width: 600px) {
     header {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 
     .question-text {
