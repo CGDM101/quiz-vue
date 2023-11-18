@@ -38,6 +38,7 @@ header {
 .question-count {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: small;
+    color: darkslategray;
 }
 
 button {
@@ -67,7 +68,7 @@ button {
     word-spacing: 0.25em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: x-large;
-    color: darkslategrey;
+    color: darkslategray;
 }
 
 .score-section {
