@@ -35,6 +35,11 @@ header {
     box-shadow: 5px 5px 5px hotpink;
 } */
 
+.question-count {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
 button {
     /* border: none; */
     border-style: hidden;

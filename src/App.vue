@@ -151,7 +151,7 @@ const handleAnswerButtonClick = (opt) => {
             <p v-if="showScore" class="score-section">Du fick {{ score }} poäng av totalt {{ questions.length }} poäng</p>
             <div v-else>
                 <div> <!--  class="question-section" -->
-                    <p> {{ currentQuestion + 1 }} / {{ questions.length }}:</p> <!--  class="question-count"-->
+                    <p class="question-count"> {{ currentQuestion + 1 }} / {{ questions.length }}:</p>
                     <p class="question-text">{{ questions[currentQuestion].questionText }}</p>
                 </div>
                 <div class="answer-section">
