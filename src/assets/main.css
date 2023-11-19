@@ -256,3 +256,10 @@ img:hover {
         font-family: fantasy;
     }
 }
+
+
+@media only screen and (orientation: landscape) {
+    body {
+      background-color: greenyellow;
+    }
+  }
