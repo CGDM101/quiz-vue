@@ -84,38 +84,38 @@ const questions = [
             { answerText: "Just Can't Get Enough", isCorrect: false },
         ],
     },
-    {
-        questionText: "Sitting waiting, anticipating nothing",
-        answerOptions: [
-            { answerText: "Black Celebration", isCorrect: false },
-            { answerText: "Sacred", isCorrect: false },
-            { answerText: "Nothing", isCorrect: true },
-        ],
-    },
-    {
-        questionText: "Faith is sleeping",
-        answerOptions: [
-            { answerText: "Ghosts Again", isCorrect: true },
-            { answerText: "Blasphemous Rumours", isCorrect: false },
-            { answerText: "Mercy In You", isCorrect: false },
-        ],
-    },
-    {
-        questionText: "Things get damaged",
-        answerOptions: [
-            { answerText: "Useless", isCorrect: false },
-            { answerText: "Precious", isCorrect: true },
-            { answerText: "Broken", isCorrect: false },
-        ],
-    },
-    {
-        questionText: "I look to you, and your strong belief",
-        answerOptions: [
-            { answerText: "Stripped", isCorrect: false },
-            { answerText: "Black Celebration", isCorrect: true },
-            { answerText: "Personal Jesus", isCorrect: false },
-        ],
-    },
+    // {
+    //     questionText: "Sitting waiting, anticipating nothing",
+    //     answerOptions: [
+    //         { answerText: "Black Celebration", isCorrect: false },
+    //         { answerText: "Sacred", isCorrect: false },
+    //         { answerText: "Nothing", isCorrect: true },
+    //     ],
+    // },
+    // {
+    //     questionText: "Faith is sleeping",
+    //     answerOptions: [
+    //         { answerText: "Ghosts Again", isCorrect: true },
+    //         { answerText: "Blasphemous Rumours", isCorrect: false },
+    //         { answerText: "Mercy In You", isCorrect: false },
+    //     ],
+    // },
+    // {
+    //     questionText: "Things get damaged",
+    //     answerOptions: [
+    //         { answerText: "Useless", isCorrect: false },
+    //         { answerText: "Precious", isCorrect: true },
+    //         { answerText: "Broken", isCorrect: false },
+    //     ],
+    // },
+    // {
+    //     questionText: "I look to you, and your strong belief",
+    //     answerOptions: [
+    //         { answerText: "Stripped", isCorrect: false },
+    //         { answerText: "Black Celebration", isCorrect: true },
+    //         { answerText: "Personal Jesus", isCorrect: false },
+    //     ],
+    // },
 ]
 
 const currentQuestion = ref(0)
