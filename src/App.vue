@@ -9,7 +9,7 @@ const questions = [
         answerOptions: [
             { answerText: "Barrel of a Gun", isCorrect: true },
             { answerText: "Clean", isCorrect: false },
-            { answerText: "Wrong", isCorrect: true },
+            { answerText: "Wrong", isCorrect: false },
         ],
     },
     {
